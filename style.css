@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Dongle-light";
+    src: url("Dongle/Dongle-Light.ttf");
+}
+
+@font-face {
+    font-family: "Dongle-regular";
+    src: url("Dongle/Dongle-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Dongle-bold";
+    src: url("Dongle/Dongle-Bold.ttf");
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 15%;
+}
+
+header .menu ul {
+    display: flex;
+}
+
+header .menu ul li {
+    list-style: none;
+    margin-right: 24px;
+    font-size: 24px;
+}
+
+header .menu ul li:last-child {
+    margin-right: 0;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    font-family: "Dongle-bold";
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    transition: all ease 0.25s;
+}
+
+header .menu ul li a:hover {
+    color: #ff7f50;
+}
+
+main .hero {
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+main .hero .hero-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+main .hero .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+main .hero .hero-content h1 {
+    font-family: "Dongle-bold";
+    font-size: 4rem;
+}
+
+main .hero .hero-content p {
+    font-family: "Dongle-bold";
+    font-size: 1.8rem;
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+
+main .hero .hero-content .hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7f50;
+    padding: 12px 26px;
+    border-radius: 50px;
+    border: none;
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    transition: all 0.25s ease-in-out;
+}
+
+main .hero .hero-content .hero-btn:hover {
+    background-color: #333;
+}
+
+main .destination {
+    font-size: 2.4rem;
+    font-family: "Dongle-bold";
+    margin: 40px 80px;
+    text-align: center;
+}
+
+main .destination h2 {
+    margin-bottom: 40px;
+}
+
+main .destination .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: left;
+}
+
+main .destination .destination-grid .destination-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+main .destination .destination-grid .destination-item h3 {
+    font-size: 2rem;
+}
+
+main .destination .destination-grid .destination-item p {
+    font-size: 1.4rem;
+    font-family: "Dongle-light";
+    line-height: 0.9;
+}
+
+main .about-us {
+    text-align: center;
+    padding: 80px;
+}
+
+main .about-us h2 {
+    font-family: "Dongle-Bold";
+    font-size: 3rem;
+}
+
+main .about-us h3 {
+    font-family: "Dongle-Bold";
+    font-size: 2.4rem;
+}
+
+main .about-us p {
+    font-family: "Dongle-light";
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+main .about-us .team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 100px;
+}
+
+main .about-us .team-members .member img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+main .about-us .team-members .member h4 {
+    font-family: "Dongle-Bold";
+    font-size: 2rem;
+    margin-bottom: -10px;
+}
+
+main .contact-us {
+    padding: 80px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+main .contact-us .contact-info h2 {
+    font-family: "Dongle-Bold";
+    font-size: 3rem;
+}
+
+main .contact-us .contact-info p {
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+main .contact-us .contact-info ul {
+    list-style: none;
+}
+
+
+main .contact-us .contact-info ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .contact-us .contact-info ul li {
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    font-family: "Dongle-light";
+}
+
+main .contact-us .contact-info ul li i {
+    margin: 0 12px;
+    font-size: 1.3rem;
+}
+
+
+
+main .contact-us .contact-info ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+main .contact-us .contact-form {
+    width: 100%;
+}
+
+
+main .contact-us .contact-form .form-group input,
+textarea {
+    width: 70%;
+    padding: 10px 24px;
+    margin: 18px 0;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-family: "Dongle-Regular";
+    font-size: 1.5rem;
+}
+
+main .contact-us .contact-form .form-group input,
+textarea:focus {
+    outline: none;
+}
+
+main .contact-us .contact-form button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7f50;
+    padding: 12px 26px;
+    border-radius: 50px;
+    border: none;
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    transition: all 0.25s ease-in-out;
+}
+
+main .contact-us .contact-form button:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    font-family: "Dongle-light";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 80px;
+}
+
+
+footer .left ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+footer .left ul li {
+    padding: 0 10px;
+}
+
+
+footer .left ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+footer .left ul li a:hover {
+    color: #ff7f50;
+}
+
+footer .left ul li a i {
+    font-size: 2rem;
+
+}
+
+footer .right p {
+    font-size: 2rem;
+}
+
+
+/* Mobile Friendly CSS */
+@media (max-width: 1163px) {
+    main .hero .hero-content h1 {
+        line-height: 0.7;
+    }
+
+    main .hero .hero-content p {
+        margin-top: 10px;
+        line-height: 0.8;
+    }
+
+    main .destination .destination-grid .destination-item img {
+        height: 250px;
+    }
+
+    main .contact-us .contact-form .form-group input,
+    textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 782px) {
+    main .hero .hero-content h1 {
+        margin-bottom: 5px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    header .logo {
+        display: none;
+    }
+
+    header .menu ul li {
+        list-style: none;
+        margin-right: 14px;
+    }
+
+    header .menu ul li a {
+        font-size: 25px;
+    }
+
+    main .destination h2 {
+        font-size: 50px;
+    }
+
+    main .destination .destination-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        text-align: left;
+    }
+
+    footer {
+        padding: 0 20px;
+    }
+
+    footer .left ul li a i,
+    footer .right p {
+        font-size: 20px;
+    }
+}
