@@ -366,6 +366,10 @@ footer .right p {
         margin-right: 14px;
     }
 
+    header .menu ul li:nth-last-child(5),  header .menu ul li:nth-last-child(6) {
+        display: none;
+    }
+
     header .menu ul li a {
         font-size: 25px;
     }
